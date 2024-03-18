@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "mod.linguardium.timernameplates.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AbstractFurnaceBlockEntityMixin",
+    "CampfireBlockEntityAccessor",
+    "CampfireBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

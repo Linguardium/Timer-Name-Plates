@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "timer-name-plates",
+	"version": "${version}",
+	"name": "Timer Name Plates",
+	"description": "Displays timers for campfires and Furnace-like blocks",
+	"authors": [
+		"Linguardium"
+	],
+	"contact": {
+	},
+	"license": "MIT",
+	"icon": "assets/timer-name-plates/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mod.linguardium.timernameplates.TimerNamePlates"
+		],
+		"client": [
+			"mod.linguardium.timernameplates.TimerNamePlatesClient"
+		]
+	},
+	"mixins": [
+		"timer-name-plates.mixins.json",
+		{
+			"config": "timer-name-plates.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
